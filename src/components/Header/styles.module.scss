@@ -11,6 +11,10 @@
   display: flex;
   align-items: center;
 
+  img {
+    cursor: pointer;
+  }
+
   nav {
     margin-left: 5rem;
     
@@ -33,16 +37,16 @@
       }
       
       // same effect as .active::after seen right below just in case
-      // &:hover::after {
-      //   content: '';
-      //   height: 3px;
-      //   border-radius: 3px 3px 0 0;
-      //   width: 100%;
-      //   position: absolute;
-      //   bottom: 0px;
-      //   left: 0;
-      //   background: var(--yellow-500);
-      // }
+      &:hover::after {
+        content: '';
+        height: 3px;
+        border-radius: 3px 3px 0 0;
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        background: var(--yellow-500);
+      }
       
       &.active {
         color: var(--white);
@@ -60,5 +64,9 @@
         background: var(--yellow-500);
       }
     }
+  }
+
+  button {
+    margin-left: auto;
   }
 }
