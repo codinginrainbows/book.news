@@ -1,5 +1,5 @@
 
-import { SignInButton } from './Sign In Button';
+import { SignInButton } from './SignInButton';
 
 import styles from './styles.module.scss';
 

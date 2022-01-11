@@ -1,0 +1,44 @@
+.contentContainer {
+  max-width: 1152px;
+  margin: 0 auto;
+  height: calc(100vh - 5rem);
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.textContainer {
+  max-width: 600px;
+  color: var(--white);
+  padding: 2rem;
+  
+  h1 {
+    font-size: 5.5rem;
+    font-weight: 900;
+    line-height: 5.5rem;
+    
+    span {
+      color: var(--cyan-500);
+    }
+  }
+  
+  p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-top: 1rem;
+    
+    span {
+      color: var(--cyan-500);
+      font-weight: bold;
+    }
+  }
+
+  button {
+    margin-top: 2.5rem;
+  }
+}
+
+.imageContainer {
+  padding: 2rem;
+}
