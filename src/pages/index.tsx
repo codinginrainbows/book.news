@@ -1,4 +1,4 @@
-import { GetServerSideProps } from 'next';
+import { GetStaticProps } from 'next';
 import Head from 'next/head';
 
 import { SubscribeButton } from '../components/SubscribeButton';
@@ -41,7 +41,7 @@ export default function Home({ product }: HomeProps) {
 }
 
 // Making the API call from node server. Also, It only works in page files. It's not meant to be used in components!
-export const getServerSideProps: GetServerSideProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
   const price = await stripe.prices.retrieve('price_1KHA6SJwx3rvawH7cYrondGR');
 
   const product = {
@@ -56,6 +56,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
   return {
     props: {
       product,
-    }
+    },
+    revalidate: 60 * 60 * 24 //24 hours in seconds
   }
 }
