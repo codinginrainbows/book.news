@@ -7,11 +7,12 @@
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--grey-900);
+  box-shadow: 1px 1px 14px 2px var(--yellow-500);
 
   transition: box-shadow 0.1s, filter 0.1s;
 
   &:hover {
     filter: brightness(1.1);
-    box-shadow: 1px 1px 18px 2px var(--yellow-500);
+    box-shadow: 2px 2px 24px 2px var(--yellow-500);
   }
 }
