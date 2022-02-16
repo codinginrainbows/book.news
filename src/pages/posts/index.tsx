@@ -1,4 +1,8 @@
+import { GetStaticProps } from 'next';
+import { prismicClient } from '../../services/prismic';
+import * as Prismic from '@prismicio/client';
 import Head from 'next/head';
+
 import styles from './styles.module.scss';
 
 export default function Posts() {
@@ -62,4 +66,24 @@ export default function Posts() {
       </main>
     </>
   )
+}
+
+export const getStaticProps: GetStaticProps = async () => {
+  const prismic = prismicClient
+
+  const response = await prismic.query(
+    Prismic.predicate.at('document.type', 'post'),
+    {
+      fetch: ['post.title', 'post.content'],
+      pageSize: 20,
+    }
+  )
+
+  console.log(JSON.stringify(response, null, 2))
+
+  return {
+    props: {
+
+    }
+  }
 }
