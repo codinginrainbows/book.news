@@ -559,7 +559,14 @@
     escape-html "^1.0.3"
     imgix-url-builder "^0.0.2"
 
-"@prismicio/react@^2.0.6":
+"@prismicio/next@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@prismicio/next/-/next-0.0.4.tgz#ef880c347c85019b84c12efbbba989d7efa0ab6d"
+  integrity sha512-7PGZhYJA2fLrruGS+lcN7DdRCPlTRltOKcbnVq3cF0X9bIBFhP6qVtPVXsvkUjQ49O0EHns9jNnZAZzlhuCLhA==
+  dependencies:
+    "@prismicio/react" "^2.0.2"
+
+"@prismicio/react@^2.0.2", "@prismicio/react@^2.0.6":
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/@prismicio/react/-/react-2.0.6.tgz#872c61493e28af68c3081ec2156162b0ac952cb7"
   integrity sha512-8dpR3liFh93tGJlMYZscQbfxJMmVsgKBJw1VLnewbrgntoTr4mxzKomHuECuw366uwh/smHvIqFI85EwevQYIQ==
@@ -597,10 +604,10 @@
     component-type "^1.2.1"
     join-component "^1.1.0"
 
-"@slicemachine/core@1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@slicemachine/core/-/core-1.1.0.tgz#24bcac7e7e35cf10afd451d6d124bd82c7ac55c0"
-  integrity sha512-mDH/a2/dBqFHUGP4zcknPn0HM2rBLm3e9Ly7Y7pY05v8RSaO9886tlxSKrOJluoedWp4WjH97aWDyzILbGROww==
+"@slicemachine/core@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@slicemachine/core/-/core-1.1.1.tgz#9a0116e8e69431fa552b0b325c4fbe760e98b553"
+  integrity sha512-J8oQNgeF4tfsyH5gl1MbYuwNHd4UCgUD0ErxVXB4LRj9dE1wd2snkpGLnHDlPIiAzkLYlvTbtr/OM8Y0jccloQ==
   dependencies:
     "@hapi/hapi" "^20.2.0"
     axios "^0.22.0"
@@ -613,12 +620,12 @@
     ora "^5.4.1"
     prompt "^1.2.0"
 
-"@slicemachine/init@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@slicemachine/init/-/init-1.1.0.tgz#908451ee27887eeea250a856faa8ac54e366bd13"
-  integrity sha512-aVbZT35L71QWjVpfIz3auelWyNtgpoi8+HcFC2iEKdrQDcL7CC4FZhZmn0NQV2HjXqRWQKGQJHgikRWiVwrmCw==
+"@slicemachine/init@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@slicemachine/init/-/init-1.1.1.tgz#08d7168de66753baa09d38eaf9f6d1eb1b8c72ad"
+  integrity sha512-5Q6qpbp2BGnFPWaH2WuDpkMMjQYBM4O4J8in0AalerbJJ3NXemdti+BWW0PS7Q5Hu0wjvP+INe46wnbNpTkGQw==
   dependencies:
-    "@slicemachine/core" "1.1.0"
+    "@slicemachine/core" "^1.1.1"
     adm-zip "^0.5.9"
     analytics-node "^6.0.0"
     axios "^0.24.0"
@@ -627,6 +634,7 @@
     inquirer "^8.2.0"
     io-ts "^2.2.16"
     tmp "^0.2.1"
+    uuid "^8.3.2"
 
 "@stripe/stripe-js@^1.22.0":
   version "1.22.0"

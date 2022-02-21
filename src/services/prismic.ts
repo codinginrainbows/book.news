@@ -1,29 +1,17 @@
 import * as Prismic from '@prismicio/client'
 
-// Fill in your repository name
-export const repositoryName = 'ignews124'
+//const Prismic = require('@prismicio/client')
 
-const endpoint = Prismic.getEndpoint(repositoryName)
+const endpoint = process.env.PRISMIC_ENDPOINT
+const accessToken = process.env.PRISMIC_ACCESS_TOKEN;
 
-export const prismicClient = Prismic.createClient(endpoint, {
-  // If your repo is private, add an access token
-  accessToken: process.env.PRISMIC_ACCESS_TOKEN,
-})
+export default function prismicClient() {
+  const prismic = Prismic.createClient(
+    endpoint,
+    {
+      accessToken,
+    }
+  )
 
-
-
-
-
-// OLD FORMAT BELOW (ERROR)
-// export default function getPrismicClient() {
-//   const prismic = Prismic.createClient(
-//     process.env.PRISMIC_ENDPOINT,
-//     {
-//       accessToken: process.env.PRISMIC_ACCESS_TOKEN,
-//     }
-//   )
-
-//   console.log('teste da branch nextPrismic')
-
-//   return prismic;
-// }
+  return prismic;
+}
