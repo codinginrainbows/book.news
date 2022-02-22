@@ -9,10 +9,78 @@
   color: var(--grey-900);
   box-shadow: 1px 1px 14px 1px var(--yellow-500);
 
-  transition: box-shadow 0.05s, filter 0.05s;
+  transition: box-shadow 0.1s, filter 0.1s;
 
   &:hover {
     filter: brightness(1.1);
     box-shadow: 2px 2px 24px 2px var(--yellow-500);
+    animation: jump 0.6s infinite;
+  }
+}
+
+@keyframes jump {
+  0% { transform: translateY(1%) }
+  10% { transform: translateY(2%) }
+  20% { transform: translateY(4%); }
+  30% { transform: translateY(6%); }
+  40% { transform: translateY(8%); }
+  50% { transform: translateY(10%); }
+  60% { transform: translateY(8%); }
+  70% { transform: translateY(6%); }
+  80% { transform: translateY(4%); }
+  90% { transform: translateY(2%); }
+  100% { transform: translateY(1%); }
+}
+
+//alternative animation
+@keyframes kreep {
+  0% {-webkit-transform: scale(1.1,.9);
+      transform: scale(1.02,.9);}
+ 50% { -webkit-transform: scale(.9,1.02) translateY(-.1rem)}
+ 70% { -webkit-transform: scale(1);
+       transform: scale(1);}
+}
+
+//alternative animation
+@keyframes wiggle {
+  2% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  4% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  6% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  8% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  10% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  12% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  14% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  16% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  18% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  20% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
   }
 }

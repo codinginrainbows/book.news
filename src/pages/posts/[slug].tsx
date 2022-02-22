@@ -5,6 +5,8 @@ import Head from "next/head";
 import { RichText } from "prismic-dom";
 import prismicClient from "../../services/prismic";
 
+import styles from './post.module.scss';
+
 interface PostProps {
   post: {
     slug: string,
@@ -22,13 +24,14 @@ export default function Post({ post }: PostProps) {
         <title>{post.title}</title>
       </Head>
 
-      <main>
-        <article>
+      <main className={styles.container}>
+        <article className={styles.post}>
           <h1>{post.title}</h1>
           <time>{post.publisedAt}</time>
-          <div>
-            {post.content}
-          </div>
+          <div
+            className={styles.postContent}
+            dangerouslySetInnerHTML={{ __html: post.content }}
+          />
         </article>
       </main>
     </>
