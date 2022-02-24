@@ -1,4 +1,4 @@
-import { GetStaticProps } from "next"
+import { GetStaticPaths, GetStaticProps } from "next"
 import { useSession } from "next-auth/react";
 import Head from "next/head";
 import Link from "next/link";
@@ -20,7 +20,7 @@ interface PostProps {
   }
 }
 
-export default function postPreview({ post }: PostProps) {
+export default function PostPreview({ post }: PostProps) {
   const { data } = useSession()
   const router = useRouter()
 
@@ -57,9 +57,11 @@ export default function postPreview({ post }: PostProps) {
   )
 }
 
-export const getStaticPaths = () => {
+export const getStaticPaths: GetStaticPaths = async () => {
   return {
-    paths: [],
+    paths: [
+      { params: { slug: 'how-to-effectively-use-the-seo-features-of-a-next.js' } }
+    ],
     fallback: 'blocking'
   }
 }

@@ -1,7 +1,7 @@
 .container {
   max-width: 1120px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 2rem 2rem 2rem;
 }
 
 .posts {
@@ -35,6 +35,7 @@
 
   p {
     font-size: 1rem;
+    text-align: justify;
     color: var(--grey-300);
     margin-top: 0.5rem;
   }
