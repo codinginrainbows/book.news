@@ -39,6 +39,37 @@
   }
 }
 
+.textContainerSubscribed {
+  max-width: 800px;
+  color: var(--white);
+  padding: 2rem;
+  
+  h1 {
+    font-size: 5rem;
+    font-weight: 900;
+    line-height: 5.5rem;
+    
+    span {
+      color: var(--cyan-500);
+    }
+  }
+  
+  p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-top: 1rem;
+    
+    span {
+      color: var(--cyan-500);
+      font-weight: bold;
+    }
+  }
+
+  button {
+    margin-top: 2.5rem;
+  }
+}
+
 .imageContainer {
   padding: 2rem;
 }
