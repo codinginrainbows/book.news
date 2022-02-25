@@ -39,8 +39,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <NextAuthProvider session={pageProps.session}>
         <PrismicProvider client={prismicClient()}>
           <Header />
-          {loading && <Loader />}
-          <Component {...pageProps} />
+          {loading ? <Loader /> : <Component {...pageProps} />}
         </PrismicProvider>
       </NextAuthProvider>
     </>

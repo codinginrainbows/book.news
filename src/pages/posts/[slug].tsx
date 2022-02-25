@@ -34,8 +34,8 @@ export default function Post({ post }: PostProps) {
             className={styles.postContent}
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
+          <Comments issueTerm={post.slug} />
         </article>
-        <Comments issueTerm={post.slug} />
       </main>
     </>
   )
