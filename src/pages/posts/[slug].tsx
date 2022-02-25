@@ -5,6 +5,8 @@ import Head from "next/head";
 import { RichText } from "prismic-dom";
 import prismicClient from "../../services/prismic";
 
+import Comments from '../../components/Comments'
+
 import styles from './post.module.scss';
 
 interface PostProps {
@@ -33,6 +35,7 @@ export default function Post({ post }: PostProps) {
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
         </article>
+        <Comments issueTerm={post.slug} />
       </main>
     </>
   )
