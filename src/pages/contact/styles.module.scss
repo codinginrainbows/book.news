@@ -21,6 +21,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      position: relative;
 
       .inputControl {      
         font-size: 1.2rem;
@@ -47,7 +48,7 @@
           padding: 1.2rem;
           font-size: 1.2rem;
           color: #fff;
-          background-color: var(--grey-700);
+          background: transparent;
           border: none;       
         }
       }
@@ -68,8 +69,14 @@
       transition: transform 0.2s;
 
       &:focus {
-        transform: scale(1.02);
+        transform: scale(1.01);
       }
+    }
+
+    .validationMessage {
+        margin: 4px 0 0 1rem;
+        font-size: 1rem;
+        color: #FF6666;
     }
   }
 }

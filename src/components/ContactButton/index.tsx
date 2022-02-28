@@ -5,13 +5,13 @@ interface FeedbackButtonProps {
   isDisabled: boolean,
 }
 
-export default function FeedbackButton({ children, isDisabled }: FeedbackButtonProps) {
+export default function ContactButton({ children, isDisabled }: FeedbackButtonProps) {
 
   return (
     <button
       className={styles.feedbackButton}
       disabled={isDisabled}
-      type='button'
+      type='submit'
     >
       {children}
     </button>
