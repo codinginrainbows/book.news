@@ -1,6 +1,6 @@
 .container {
   max-width: 1120px;
-  margin: 0 auto;
+  margin: 7rem auto 0;
   padding: 0 2rem;
 }
 
@@ -52,7 +52,7 @@
 
   .postPreviewContinueReading {
     //background-color: var(--grey-700);
-    background-color: #1F2729;
+    background-color: var(--darkblue-800);
     width: 100%;
     padding: 2rem;
     border-radius: 100px;
@@ -63,7 +63,7 @@
     font-weight: bold;
 
     a {
-      color: var(--yellow-500);
+      color: var(--cyan-500);
       margin-left: 6px;
 
       &:hover {

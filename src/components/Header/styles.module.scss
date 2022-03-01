@@ -1,5 +1,10 @@
 .headerContainer {
   border-bottom: 1px solid var(--grey-800);
+
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: var(--grey-900);
 }
 
 .headerContent {
@@ -10,6 +15,12 @@
   
   display: flex;
   align-items: center;
+
+  h1 {
+    color: var(--grey-100);
+    text-shadow: 2px 2px var(--grey-700);
+    cursor: pointer;
+  }
 
   nav {
     margin-left: 5rem;
@@ -57,7 +68,7 @@
         position: absolute;
         bottom: 0px;
         left: 0;
-        background: var(--yellow-500);
+        background: var(--cyan-500);
       }
     }
   }

@@ -13,7 +13,7 @@ export function SubscribedPostsButton({ priceId }: SubscribeButtonProps) {
         type="button"
         className={styles.subscribeButton}
       >
-        See our posts
+        Read articles
       </button>
     </Link>
   )

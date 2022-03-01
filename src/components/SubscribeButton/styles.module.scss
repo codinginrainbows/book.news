@@ -1,19 +1,19 @@
 .subscribeButton {
-  background: var(--yellow-500);
+  background: #E6E6E6;//var(--yellow-500);
   padding: 1.2rem 4rem;
   border: none;
   border-radius: 2rem;
   
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--grey-900);
-  box-shadow: 1px 1px 14px 1px var(--yellow-500);
+  color: var(--darkblue-800);
+  box-shadow: 0 0 80px 0 var(--cyan-500);
 
-  transition: box-shadow 0.1s, filter 0.1s;
+  transition: box-shadow 0.2s, filter 0.1s;
 
   &:hover {
     filter: brightness(1.01);
-    box-shadow: 2px 2px 24px 2px var(--yellow-500);
+    box-shadow: none;
     animation: jump 0.4s infinite;
   }
 }

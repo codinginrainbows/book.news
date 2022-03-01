@@ -24,15 +24,15 @@ export default function Home({ product }: HomeProps) {
       //home page for those who are NOT subscribed
       <>
         <Head>
-          <title>ig.news</title>
+          <title>book.news</title>
         </Head>
 
         <main className={styles.contentContainer}>
           <section className={styles.textContainer}>
-            <h1>News about <br /> <span>React</span> world.</h1>
+            <h1>Articles about <br /><span>Literature</span> world</h1>
 
             <p>Get acess to all publications <br />
-              <span>for {product.amount} monthly</span>
+              for<span> {product.amount} </span>monthly
             </p>
 
             <SubscribeButton priceId={product.priceId} />
@@ -48,16 +48,16 @@ export default function Home({ product }: HomeProps) {
       //home page for those who ARE subscribed
       <>
         <Head>
-          <title>ig.news</title>
+          <title>book.news</title>
         </Head>
 
         <main className={styles.contentContainer}>
           <section className={styles.textContainerSubscribed}>
-            <h1>Subscribed! 🎉</h1>
+            <h1>You're in!</h1>
             <SubscribedPostsButton priceId={product.priceId} />
           </section>
           <section className={styles.imageContainer}>
-            <img src="/images/avatar.svg" alt="Girl coding" />
+            <img src="/images/avatarSubscribed.svg" alt="Girl coding" />
           </section>
         </main>
       </>

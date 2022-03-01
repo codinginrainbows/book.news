@@ -1,6 +1,6 @@
 .container {
   max-width: 1120px;
-  margin: 0 auto;
+  margin: 7rem auto 0;
   padding: 0 2rem 2rem 2rem;
 }
 
@@ -41,7 +41,7 @@
   }
   
   &:hover strong {
-    color: var(--yellow-500);
+    color: var(--cyan-500);
   }
  }
 }

@@ -16,7 +16,7 @@ export default function contactUs() {
   const [validationMessageEmail, setValidationMessageEmail] = useState('');
   const [validationMessageTextarea, setValidationMessageTextarea] = useState('');
 
-  //validating NAME input field
+  // validating NAME input field
   const handleInputTextChangeName = (e) => {
     if (inputTextName === '') {
       setValidationMessageName(null)
@@ -34,7 +34,7 @@ export default function contactUs() {
     setInputTextName(e.target.value)
   }
 
-  //validating EMAIL input field
+  // validating EMAIL input field
   const handleInputTextChangeEmail = (e) => {
     if (inputTextEmail === '') {
       setValidationMessageEmail(null)
@@ -50,7 +50,7 @@ export default function contactUs() {
     setInputTextEmail(e.target.value)
   }
 
-  //validating TEXTAREA input field
+  // validating TEXTAREA input field
   const handleTextareaChange = (e) => {
     if (textarea === '') {
       setValidationMessageTextarea(null)
