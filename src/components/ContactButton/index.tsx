@@ -5,6 +5,10 @@ interface FeedbackButtonProps {
   isDisabled: boolean,
 }
 
+function preventDefault(e) {
+  e.preventDefault();
+}
+
 export default function ContactButton({ children, isDisabled }: FeedbackButtonProps) {
 
   return (
@@ -12,6 +16,7 @@ export default function ContactButton({ children, isDisabled }: FeedbackButtonPr
       className={styles.feedbackButton}
       disabled={isDisabled}
       type='submit'
+      onSubmit={preventDefault}
     >
       {children}
     </button>

@@ -23,12 +23,17 @@
       align-items: center;
       position: relative;
 
+      .msg {
+        display: inline-block;
+        text-align: left;
+      }
+
       .inputControl {      
         font-size: 1.2rem;
         color: #fff;
         background-color: var(--grey-700);
         
-        margin-top: 2rem;
+        margin-top: 2.5rem;
         padding: 0 1.5rem;
         width: 350px;
         
@@ -57,7 +62,7 @@
     textarea {
       font-size: 1.2rem;
       color: #fff;
-      margin-top: 1.5rem;
+      margin-top: 2rem;
       width: 100%;
       background-color: var(--grey-700);
       border: none;
@@ -74,7 +79,8 @@
     }
 
     .validationMessage {
-        margin: 4px 0 0 1rem;
+        position: absolute;
+        margin: 2px 0 4px 1rem;
         font-size: 1rem;
         color: #FF6666;
     }
