@@ -20,6 +20,9 @@ interface PostsProps {
 
 export default function Posts({ posts }: PostsProps) {
 
+  // algorithm to order by last publication first
+  const sortedByLastPublicationDate = posts.sort((a, b) => parseFloat(b.publishedAt) - parseFloat(a.publishedAt));
+
   return (
     <>
       <Head>
@@ -28,7 +31,7 @@ export default function Posts({ posts }: PostsProps) {
 
       <main className={styles.container}>
         <div className={styles.posts}>
-          {posts.map(post => (
+          {sortedByLastPublicationDate.map(post => (
             <Link key={post.slug} href={`/posts/${post.slug}`}>
               <a>
                 <time>{post.publishedAt}</time>
@@ -56,6 +59,10 @@ export const getStaticProps: GetStaticProps = async (req) => {
   //console.log(JSON.stringify(response, null, 2))
 
   const posts = response.results.map(post => {
+
+    //log to verify the whole object containing each post individually
+    //console.log(response.results)
+
     return {
       slug: post.uid,
       title: RichText.asText(post.data.title),

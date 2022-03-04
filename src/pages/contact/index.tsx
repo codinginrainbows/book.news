@@ -74,7 +74,7 @@ export default function contactUs() {
 
         <div>
           <div className={styles.msg}>
-            <div className={styles.inputControl}>
+            <div tabIndex={0} className={styles.inputControl}>
               <FiUser className={styles.icon} />
               <input
                 onChange={handleInputTextChangeName}
@@ -124,6 +124,6 @@ export default function contactUs() {
 
         <ContactButton isDisabled={contactButtonDisabled} children={'Send'} />
       </form>
-    </main>
+    </main >
   )
 }

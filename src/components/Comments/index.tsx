@@ -14,7 +14,7 @@ const Comments = ({ issueTerm }) => {
     script.setAttribute('src', 'https://utteranc.es/client.js')
     script.setAttribute('crossorigin', 'anonymous')
     script.setAttribute('async', 'true')
-    script.setAttribute('repo', 'codinginrainbows/news-app')
+    script.setAttribute('repo', 'codinginrainbows/book.news')
     script.setAttribute('issue-term', issueTerm)
     script.setAttribute('theme', theme)
     anchor.appendChild(script)

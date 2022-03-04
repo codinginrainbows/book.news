@@ -28,15 +28,15 @@
         text-align: left;
       }
 
-      .inputControl {      
+      .inputControl {
         font-size: 1.2rem;
         color: #fff;
         background-color: var(--grey-700);
-        
+
         margin-top: 2.5rem;
         padding: 0 1.5rem;
         width: 350px;
-        
+
         border: none;
         border-radius: 1rem;
 
@@ -47,14 +47,19 @@
           color: var(--cyan-500);
           padding-right: 0;
         }
-        
+
         input {
           width: 100%;
           padding: 1.2rem;
           font-size: 1.2rem;
           color: #fff;
           background: transparent;
-          border: none;       
+          border: none;
+        }
+
+        //this focus is on .inputControl div
+        &:focus-within {
+          border: 1px solid var(--cyan-500);
         }
       }
     }
@@ -74,15 +79,15 @@
       transition: transform 0.2s;
 
       &:focus {
-        transform: scale(1.01);
+        border: 1px solid var(--cyan-500);
       }
     }
 
     .validationMessage {
-        position: absolute;
-        margin: 2px 0 4px 1rem;
-        font-size: 1rem;
-        color: #FF6666;
+      position: absolute;
+      margin: 2px 0 4px 1rem;
+      font-size: 1rem;
+      color: #FF6666;
     }
   }
 }
