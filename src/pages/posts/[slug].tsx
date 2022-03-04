@@ -4,10 +4,12 @@ import Head from "next/head";
 
 import { RichText } from "prismic-dom";
 import prismicClient from "../../services/prismic";
+import * as Prismic from '@prismicio/client';
 
 import Comments from '../../components/Comments'
 
 import styles from './post.module.scss';
+import Link from "next/link";
 
 interface PostProps {
   post: {
@@ -15,10 +17,25 @@ interface PostProps {
     title: string,
     content: string,
     publishedAt: string,
+  },
+  navigation: {
+    previousPost: {
+      uid: string,
+      data: {
+        title: string,
+      };
+    }[];
+
+    nextPost: {
+      uid: string,
+      data: {
+        title: string,
+      };
+    }[];
   }
 }
 
-export default function Post({ post }: PostProps) {
+export default function Post({ post, navigation }: PostProps) {
 
   return (
     <>
@@ -34,6 +51,25 @@ export default function Post({ post }: PostProps) {
             className={styles.postContent}
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
+          <section className={styles.nextPostLink}>
+            {/* {navigation?.previousPost.length > 0 && (
+              <Link href={`/posts/${navigation.previousPost[0].uid}`}>
+                <a>
+                  <h4>{`${navigation.previousPost[0].data.title}`}</h4>
+                  <p>Last Post</p>
+                </a>
+              </Link>
+            )}
+
+            {navigation?.nextPost.length > 0 && (
+              <Link href={`/posts/${navigation.nextPost[0].uid}`}>
+                <a>
+                  <h4>{`${navigation.nextPost[0].data.title}`}</h4>
+                  <p>Next Post</p>
+                </a>
+              </Link>
+            )} */}
+          </section>
           <Comments issueTerm={post.slug} />
         </article>
       </main>
@@ -58,6 +94,25 @@ export const getServerSideProps: GetServerSideProps = async ({ req, params }) =>
 
   const response = await prismic.getByUID('post', String(slug), {})
 
+  // getting prev and next post to make links below the post
+  const previousPost = await prismic.query(
+    [Prismic.Predicates.at('document.type', 'post')],
+    {
+      pageSize: 1,
+      after: response.id,
+      orderings: ['document.first_publication_date'],
+    }
+  )
+
+  const nextPost = await prismic.query(
+    [Prismic.Predicates.at('document.type', 'post')],
+    {
+      pageSize: 1,
+      after: response.id,
+      orderings: ['document.first_publication_date desc]'],
+    }
+  )
+
   //formating data
   const post = {
     slug,
@@ -73,6 +128,10 @@ export const getServerSideProps: GetServerSideProps = async ({ req, params }) =>
   return {
     props: {
       post,
+      navigation: {
+        previousPost: previousPost?.results,
+        nextPost: nextPost?.results
+      }
     }
   }
 }

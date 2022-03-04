@@ -60,9 +60,6 @@ export const getStaticProps: GetStaticProps = async (req) => {
 
   const posts = response.results.map(post => {
 
-    //log to verify the whole object containing each post individually
-    //console.log(response.results)
-
     return {
       slug: post.uid,
       title: RichText.asText(post.data.title),
@@ -74,6 +71,9 @@ export const getStaticProps: GetStaticProps = async (req) => {
       })
     }
   })
+
+  //log to verify the whole object containing each post individually
+  //console.log(response.results)
 
   return {
     props: {

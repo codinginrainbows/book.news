@@ -10,7 +10,7 @@
 
   h1 {
     font-size: 3.5rem;
-    font-weight: 900;   
+    font-weight: 900;
   }
 
   time {
@@ -26,18 +26,21 @@
     font-size: 1.125rem;
     text-align: justify;
     color: var(--grey-100);
-  
-    p, ol, ul {
+
+    p,
+    ol,
+    ul {
       margin: 1.5rem 0;
     }
 
-    ol, ul {
+    ol,
+    ul {
       margin-left: 2rem;
     }
-  
+
     ul {
       padding-left: 1.5rem;
-  
+
       li {
         margin: 0.5rem;
       }
@@ -58,7 +61,7 @@
     border-radius: 100px;
     margin: 2rem 0;
 
-    text-align: center;   
+    text-align: center;
     font-size: 1.25rem;
     font-weight: bold;
 
@@ -69,6 +72,20 @@
       &:hover {
         text-decoration: underline;
       }
+    }
+  }
+
+  .nextPostLink {
+    border-top: 1px solid (var(--grey-700));
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+
+    p {
+      margin-top: 0.5rem;
+      color: var(--cyan-500);
     }
   }
 }
