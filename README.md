@@ -46,7 +46,7 @@ Blog service built with Typescript, Saas, React.js, Next.js, Fauna DB, that prov
 :large_blue_circle: Main color: `#61dafb` <br>
 :black_circle: Background: `#121214` <br>
 :white_circle: White: `#ffff` <br>
-- Grey shades: <br>
+Grey shades: <br>
 100: `#e1e1e6` <br>
 300: `#a8a8b3` <br>
 700: `#323238` <br>
