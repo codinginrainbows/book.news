@@ -25,24 +25,16 @@ Blog service built with Typescript, Saas, React.js, Next.js, Fauna DB, that prov
 
 ## :rocket: Technologies
 
-✔️ HTML5 
-✔️ CSS3 
-✔️ Saas
-✔️ Typescript 
-✔️ React.js
-✔️ Next.js
-✔️ Axios
-✔️ Fauna DB
-✔️ Stripe
-✔️ Prismic
-
-## :gear: Setup
-
-1. Clone this repo `git clone https://github.com/codinginrainbows/book.news`
-2. Acess folder `cd book.news`
-3. Install all dependencies `yarn` 
-4. Run `yarn dev`
-5. Open `http://localhost:3000` in your preferred browser.
+✔️ HTML5 <br>
+✔️ CSS3 <br>
+✔️ Saas<br>
+✔️ Typescript <br>
+✔️ React.js <br>
+✔️ Next.js <br>
+✔️ Axios <br>
+✔️ Fauna DB <br>
+✔️ Stripe <br>
+✔️ Prismic <br>
 
 ## :paintbrush: Color Scheme
 
@@ -55,6 +47,14 @@ Blog service built with Typescript, Saas, React.js, Next.js, Fauna DB, that prov
 700: `#323238`
 800: `#29292e`
 850: `#1f2729`
+
+## :gear: Setup
+
+1. Clone this repo `git clone https://github.com/codinginrainbows/book.news`
+2. Access folder `cd book.news`
+3. Install all dependencies `yarn` 
+4. Run `yarn dev`
+5. Open `http://localhost:3000` in your preferred browser.
 
 ## :man_technologist: Developers
 
