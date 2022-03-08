@@ -58,7 +58,5 @@ Blog service built with Typescript, Saas, React.js, Next.js, Fauna DB, that prov
 
 ## :man_technologist: Developers
 
-| [<img src="https://avatars.githubusercontent.com/u/82886646?v=4" width=115><br><sub>Gabriel Garcia</sub>](https://github.com/codinginrainbows) |
-
 | [<img src="https://avatars.githubusercontent.com/u/82886646?v=4" width=115><br><sub>Gabriel Garcia</sub>](https://github.com/codinginrainbows) |  [<img src="https://avatars.githubusercontent.com/u/82886646?v=4" width=115><br><sub>Gabriel Garcia</sub>](https://github.com/codinginrainbows) |  [<img src="https://avatars.githubusercontent.com/u/82886646?v=4" width=115><br><sub>Gabriel Garcia</sub>](https://github.com/codinginrainbows) |
 | :---: | :---: | :---: |
