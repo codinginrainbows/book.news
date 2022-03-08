@@ -60,5 +60,5 @@ Blog service built with Typescript, Saas, React.js, Next.js, Fauna DB, that prov
 
 | [<img src="https://avatars.githubusercontent.com/u/82886646?v=4" width=115><br><sub>Gabriel Garcia</sub>](https://github.com/codinginrainbows) |
 
-| [<img src="https://avatars.githubusercontent.com/u/37356058?v=4" width=115><br><sub>Camila Fernanda Alves</sub>](https://github.com/camilafernanda) |   |
+| [<img src="https://avatars.githubusercontent.com/u/82886646?v=4" width=115><br><sub>Gabriel Garcia</sub>](https://github.com/codinginrainbows) |  [<img src="https://avatars.githubusercontent.com/u/82886646?v=4" width=115><br><sub>Gabriel Garcia</sub>](https://github.com/codinginrainbows) |  [<img src="https://avatars.githubusercontent.com/u/82886646?v=4" width=115><br><sub>Gabriel Garcia</sub>](https://github.com/codinginrainbows) |
 | :---: | :---: | :---: |
