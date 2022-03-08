@@ -20,7 +20,7 @@ Blog service built with Typescript, Saas, React.js, Next.js, Fauna DB, that prov
 
 - `Homepage`: There are different homepages in case the user is logged in or not.
 - `Post Preview`: Only users that are logged in and have a subscription can read the full text of a post.
-- `Post listing`: A sort algorithm was implemented to show recent posts first.
+- `Post Listing`: A sort algorithm was implemented to show recent posts first.
 - `Form Validation`: Customized real-time form validation.
 
 ## :rocket: Technologies
