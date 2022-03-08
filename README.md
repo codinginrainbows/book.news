@@ -2,7 +2,7 @@
 
 <p align="center">
 <img src="http://img.shields.io/static/v1?label=STATUS&message=FINISHED&color=BLUE&style=for-the-badge"/>
-<img src"https://img.shields.io/github/stars/codinginrainbows?style=social"/>
+![GitHub Org's stars](https://img.shields.io/github/stars/codinginrainbows?style=social)
 </p>
 
 Blog service built with Typescript, Saas, React.js, Next.js, Fauna DB, that provides access to literary reviews for a certain price monthly. After the user is logged in, he or she can pay a subscription with a credit card through Stripe to have full access to all reviews. The blog owner will write and post reviews through Prismic CMS.
