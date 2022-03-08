@@ -25,7 +25,7 @@ Blog service built with Typescript, Saas, React.js, Next.js, Fauna DB, that prov
 - [x] `Loader`: Loading animation while navigating through routes.
 - [x] `Post Preview`: Only users that are logged in and have a subscription can read the full text of a post.
 - [x] `Post Listing`: Sort algorithm to show recent posts first. 
-- [x] `Comments`: Comment section made with Utteranc.  
+- [x] `Comments`: Comment section made with Utterance.  
 - [x] `Form Validation`: Customized real-time form validation.
 
 ## :rocket: Technologies
