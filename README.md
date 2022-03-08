@@ -7,7 +7,7 @@
 Blog service built with Typescript, Saas, React.js, Next.js, Fauna DB, that provides access to literary reviews for a certain price monthly. After the user is logged in, he or she can pay a subscription with a credit card through Stripe to have full access to all reviews. The blog owner will write and post reviews through Prismic CMS.
 
 ## :file_folder: Index
-
+* [First Look](#camera-first-look)
 * [Features](#hammer-features)
 * [Technologies](#rocket-technologies)
 * [Color Scheme](#paintbrush-color-scheme)
