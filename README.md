@@ -25,16 +25,16 @@ Blog service built with Typescript, Saas, React.js, Next.js, Fauna DB, that prov
 
 ## :rocket: Technologies
 
-✔️ HTML5 <br>
-✔️ CSS3 <br>
-✔️ Saas<br>
-✔️ Typescript <br>
-✔️ React.js <br>
-✔️ Next.js <br>
-✔️ Axios <br>
-✔️ Fauna DB <br>
-✔️ Stripe <br>
-✔️ Prismic <br>
+  ✔️ HTML5 <br>
+  ✔️ CSS3 <br>
+  ✔️ Saas<br>
+  ✔️ Typescript <br>
+  ✔️ React.js <br>
+  ✔️ Next.js <br>
+  ✔️ Axios <br>
+  ✔️ Fauna DB <br>
+  ✔️ Stripe <br>
+  ✔️ Prismic <br>
 
 ## :paintbrush: Color Scheme
 
