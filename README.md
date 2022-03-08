@@ -18,10 +18,10 @@ Blog service built with Typescript, Saas, React.js, Next.js, Fauna DB, that prov
 
 ## :hammer: Features implemented
 
-`Homepage`: There are different homepages in case the user is logged in or not.
-`Post Preview`: Only users that are logged in and have a subscription can read the full text of a post.
-`Post Listing`: A sort algorithm was implemented to show recent posts first.
-`Form Validation`: Customized real-time form validation.
+`Homepage`: There are different homepages in case the user is logged in or not. <br>
+`Post Preview`: Only users that are logged in and have a subscription can read the full text of a post. <br>
+`Post Listing`: A sort algorithm was implemented to show recent posts first. <br>
+`Form Validation`: Customized real-time form validation. <br>
 
 ## :rocket: Technologies
 
@@ -38,9 +38,12 @@ Blog service built with Typescript, Saas, React.js, Next.js, Fauna DB, that prov
 
 ## :paintbrush: Color Scheme
 
-Main color: `#61dafb`
-Background: `#121214`
-White: `#ffff`
+Main color: `#61dafb` <br>
+
+Background: `#121214` <br>
+
+White: `#ffff` <br>
+
 Grey shades: <br>
 100: `#e1e1e6` <br>
 300: `#a8a8b3` <br>
