@@ -15,7 +15,7 @@ Blog service built with Typescript, Saas, React.js, Next.js, Fauna DB, that prov
 * [Setup](#gear)
 * [Developpers](#devs)
 
-## :camera_flash: First Look
+## :camera: First Look
 ![home_login](https://user-images.githubusercontent.com/82886646/157143259-f0d72784-2863-4e7b-b1bc-13874e5d995c.gif)
 ![comments](https://user-images.githubusercontent.com/82886646/157143264-46322c0d-b334-4ff9-814d-1af1f3c5229c.gif)
 ![form](https://user-images.githubusercontent.com/82886646/157143271-dbdcefc7-ee80-4a58-a9e9-c40d060be413.gif)
