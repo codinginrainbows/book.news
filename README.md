@@ -41,12 +41,12 @@ Blog service built with Typescript, Saas, React.js, Next.js, Fauna DB, that prov
 * Main color: `#61dafb`
 * Background: `#121214`
 * White: `#ffff`
-* Grey shades: 
-100: `#e1e1e6`
-300: `#a8a8b3`
-700: `#323238`
-800: `#29292e`
-850: `#1f2729`
+* Grey shades: <br>
+100: `#e1e1e6` <br>
+300: `#a8a8b3` <br>
+700: `#323238` <br>
+800: `#29292e` <br>
+850: `#1f2729` <br>
 
 ## :gear: Setup
 
