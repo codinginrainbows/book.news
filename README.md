@@ -12,7 +12,7 @@ Blog service built with Typescript, Saas, React.js, Next.js, Fauna DB, that prov
 * [Features](#features-implemented)
 * [Technologies](#technologies-used)
 * [Color Scheme](#colors)
-* [Setup](#Setup)
+* [Setup](#gear-setup)
 * [Developpers](#devs)
 
 ## :camera: First Look
