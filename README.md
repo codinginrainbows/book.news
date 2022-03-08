@@ -1,8 +1,8 @@
 <h1 align="center"> book.news </h1>
 
 <p align="center">
-<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
-<img src"https://img.shields.io/github/stars/camilafernanda?style=social"/>
+<img src="http://img.shields.io/static/v1?label=STATUS&message=FINISHED&color=BLUE&style=for-the-badge"/>
+<img src"https://img.shields.io/github/stars/codinginrainbows?style=social"/>
 </p>
 
 Blog service built with Typescript, Saas, React.js, Next.js, Fauna DB, that provides access to literary reviews for a certain price monthly. After the user is logged in, he or she can pay a subscription with a credit card through Stripe to have full access to all reviews. The blog owner will write and post reviews through Prismic CMS.
@@ -22,9 +22,10 @@ Blog service built with Typescript, Saas, React.js, Next.js, Fauna DB, that prov
 
 ## :hammer: Features implemented
 
-- `Homepage`: There are different homepages in case the user is logged in or not.
+- `Homepage`: Different homepages in case the user is logged in or not.
+- `Loader`: Loading animation while navigating through routes.
 - `Post Preview`: Only users that are logged in and have a subscription can read the full text of a post.
-- `Post Listing`: A sort algorithm was implemented to show recent posts first. 
+- `Post Listing`: Sort algorithm to show recent posts first. 
 - `Form Validation`: Customized real-time form validation. 
 
 ## :rocket: Technologies
