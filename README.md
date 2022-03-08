@@ -43,10 +43,9 @@ Blog service built with Typescript, Saas, React.js, Next.js, Fauna DB, that prov
 
 ## :paintbrush: Color Scheme
 
-Main color: `#61dafb` :large_blue_circle: <br>
-Background: `#121214` :black_circle: <br>
-White: `#ffff` :white_circle: <br>
-Grey shades: <br>
+:large_blue_circle: Main color: `#61dafb` <br>
+:black_circle: Background: `#121214` <br>
+:white_circle: Grey shades: <br>
 100: `#e1e1e6` <br>
 300: `#a8a8b3` <br>
 700: `#323238` <br>
