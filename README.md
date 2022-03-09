@@ -32,7 +32,7 @@ Blog service built with Typescript, Saas, React.js, Next.js, Fauna DB, that prov
 
   ✔️ HTML 5 <br>
   ✔️ CSS 3 <br>
-  ✔️ Saas<br>
+  ✔️ SaaS<br>
   ✔️ TypeScript <br>
   ✔️ React.js <br>
   ✔️ Next.js <br>
