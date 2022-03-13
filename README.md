@@ -32,7 +32,7 @@ Blog service that provides access to literary reviews for a certain price monthl
 
   ✔️ HTML 5 <br>
   ✔️ CSS 3 <br>
-  ✔️ SaaS<br>
+  ✔️ Sass/SCSS<br>
   ✔️ TypeScript <br>
   ✔️ React.js <br>
   ✔️ Next.js <br>
