@@ -37,7 +37,6 @@ Blog service that provides access to literary reviews for a certain price monthl
   ✔️ React.js <br>
   ✔️ Next.js <br>
   ✔️ Axios <br>
-  ✔️ Fauna DB <br>
   ✔️ Stripe <br>
   ✔️ Prismic <br>
 
